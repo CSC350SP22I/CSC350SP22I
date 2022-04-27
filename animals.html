@@ -1,0 +1,56 @@
+<html>
+<head>
+<style>
+body {background-color: green;}
+</style>
+<script>
+function validate()
+{
+	if(document.getElementById("Animal").value == '')
+	{
+		alert("Animal FIELD IS EMPTY");
+		return false;
+	}
+	else
+		if(document.getElementById("Habitat").value == '')
+		{
+			alert("Habitat FIELD IS EMPTY");
+			return false;
+		}
+		
+			
+			else
+				return true;
+}
+</script>
+</head>
+<body>
+<form action="Animals.php" method="post" onsubmit="return validate();">
+<table>
+<tr><td>Animal</td><td><input type="text" name="Animal" id="Animal"></td></tr>
+<tr><td>Habitat</td><td>
+
+<label for="Habitat">Choose a habitat:</label>
+<select name="Habitat" id="Habitat">
+
+  <option value="Land">Land</option>
+
+  <option value="Sea">Sea</option>
+
+  <option value="Air">Air</option>
+
+</select>
+
+
+
+<!--<input type="radio" name="Habitat" id="Land" value="Land"> Land
+<input type="radio" name="Habitat" id="Sea" value="Sea"> Sea
+<input type="radio" name="Habitat" id="Air" value="Air"> Air -->
+  
+</td></tr>
+
+<tr colspan = "2"><td><input type="submit" value="SUBMIT"></td></tr>
+</table>
+</form>
+</body>
+</html>
