@@ -1,0 +1,46 @@
+<html>
+<head>
+<style>
+body{background-color: white;}
+</style>
+<script>
+function isempty()
+{
+	if(document.getElementById("apt").value=='')
+	{
+		alert("Email is Empty");
+		return false;
+	}
+	else if (document.getElementById("Password").value=='')
+	{
+		alert("Password is Empty");
+		return false;
+	}
+	else if (document.getElementById("Email").value=='')
+	{
+		alert("First Name is Empty");
+		return false;
+	}
+	else if (document.getElementById("PNum").value=='')
+	{
+		alert("Last Name is Empty");
+		return false;
+	}
+	else 				
+		return true;
+		
+}
+</script>
+</head>
+<body>
+<form action="SignUp.php" method="post" onsubmit="return isempty()">
+<table>
+<tr><td>Apartment</td><td><input type="text" name="Apartment" id="Apartment"></td></tr>
+<tr><td>Password </td><td><input type="password" name="Password" id="Password"></td></tr>
+<tr><td>Email </td><td><input type="text" name="EMail" id="EMail"></td></tr>
+<tr><td>Phone Number</td><td><input type="text" name="PNum" id="PNum"></td></tr>
+<tr colspan = "2"><td><input type="submit" value="Submit" ></td></tr>
+</table>
+</form>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<html>
+<head>
+<style>
+body {background-color: white;}
+</style>
+<script>
+function validate()
+{
+
+		if(document.getElementById("Password").value == '')
+			{
+				alert("Password FIELD IS EMPTY");
+				return false;
+			}
+			
+			else
+			if(document.getElementById("Apartment").value == '')
+			{
+				alert("Schedule FIELD IS EMPTY");
+				return false;
+			}
+			
+				return true;
+}
+</script>
+</head>
+<body>
+<p> <h1>Choose your Schedule <h1> 
+<form action="update.php" method="post" onsubmit="return validate()">
+<table>
+<tr><td>Date </td><td><input type="drop" name="Date" id="Date"></td></tr>
+<tr><td>Time</td><td><input type="drop" name="Time" id="Time"></td></tr>
+</table>
+<tr colspan = "2"><td><input type="submit" value="Log In"></td><td> 
+</form>
+</body>
+</html>
