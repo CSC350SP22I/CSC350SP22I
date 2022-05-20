@@ -1,0 +1,82 @@
+<html>
+<head>
+<style>
+body {background-color: green;}
+</style>
+<script>
+function validate()
+{
+	if(document.getElementById("TimeSlot").value == '')
+	{
+		alert("TimeSlot FIELD IS EMPTY");
+		return false;
+	}
+	else
+		if(document.getElementById("Schedule").value == '')
+		{
+			alert("Schedule FIELD IS EMPTY");
+			return false;
+		}
+		
+			
+			else
+				return true;
+}
+</script>
+</head>
+<body>
+<form action="Animals.php" method="post" onsubmit="return validate();">
+<table>
+
+<tr><td>TimeSlot</td><td>
+
+<label for="Schedule">Choose a TimeSlot:</label>
+<select name="TimeSlot" id="TimeSlot">
+
+  <option value="Midnight-3am">Midnight-3am</option>
+
+  <option value="3-6am">3-6am</option>
+
+  <option value="6-9am">6-9am</option>
+  
+  <option value="9am-Noon">9am-Noon</option>
+  
+  <option value="Noon-3pm">Noon-3pm</option>
+  
+  <option value="3-6pm">3-6pm</option>
+  
+  <option value="6-9pm">6-9pm</option>
+  
+  <option value="9pm-Midnight">9pm-Midnight</option>
+
+</select>
+
+<tr><td>Schedule</td><td>
+
+<label for="Schedule">Choose a day:</label>
+<select name="Schedule" id="Schedule">
+
+  <option value="Monday">Monday</option>
+
+  <option value="Tuesday">Tuesday</option>
+
+  <option value="Wednesday">Wednesday</option>
+  
+  <option value="Thursday">Thursday</option>
+  
+  <option value="Friday">Friday</option>
+  
+  <option value="Saturday">Saturday</option>
+  
+  <option value="Sunday">Sunday</option>
+
+</select>
+
+ 
+</td></tr>
+
+<tr colspan = "2"><td><input type="submit" value="SUBMIT"></td></tr>
+</table>
+</form>
+</body>
+</html>
