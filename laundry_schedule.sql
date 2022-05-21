@@ -1,5 +1,3 @@
-CREATE DATABASE  IF NOT EXISTS `laundry` /*!40100 DEFAULT CHARACTER SET utf8 */ /*!80016 DEFAULT ENCRYPTION='N' */;
-USE `laundry`;
 -- MySQL dump 10.13  Distrib 8.0.26, for Win64 (x86_64)
 --
 -- Host: localhost    Database: laundry
@@ -28,11 +26,8 @@ CREATE TABLE `schedule` (
   `Apartment` varchar(4) NOT NULL,
   `Slot` varchar(15) DEFAULT NULL,
   `Date` varchar(8) DEFAULT NULL,
-  `Credentials_Apt` varchar(4) NOT NULL,
-  `Credentials_Password` varchar(45) NOT NULL,
-  PRIMARY KEY (`Apartment`,`Credentials_Apt`,`Credentials_Password`),
-  KEY `fk_Building Schedule_Credentials_idx` (`Credentials_Apt`,`Credentials_Password`),
-  CONSTRAINT `fk_Building Schedule_Credentials` FOREIGN KEY (`Credentials_Apt`, `Credentials_Password`) REFERENCES `credentials` (`Apartment`, `Password`)
+  PRIMARY KEY (`Apartment`),
+  CONSTRAINT `fk_Schedule_Credentials` FOREIGN KEY (`Apartment`) REFERENCES `credentials` (`Apartment`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3;
 /*!40101 SET character_set_client = @saved_cs_client */;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -45,4 +40,4 @@ CREATE TABLE `schedule` (
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2022-05-20 15:37:37
+-- Dump completed on 2022-05-21 11:48:25
