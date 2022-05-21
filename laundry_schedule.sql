@@ -27,6 +27,7 @@ CREATE TABLE `schedule` (
   `Slot` varchar(15) DEFAULT NULL,
   `Date` varchar(8) DEFAULT NULL,
   PRIMARY KEY (`Apartment`),
+  UNIQUE KEY `Apartment_UNIQUE` (`Apartment`),
   CONSTRAINT `fk_Schedule_Credentials` FOREIGN KEY (`Apartment`) REFERENCES `credentials` (`Apartment`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3;
 /*!40101 SET character_set_client = @saved_cs_client */;
@@ -40,4 +41,4 @@ CREATE TABLE `schedule` (
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2022-05-21 11:48:25
+-- Dump completed on 2022-05-21 12:00:50
