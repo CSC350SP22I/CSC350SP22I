@@ -1,0 +1,187 @@
+<html>
+<head>
+<style>
+body {background-color: white;}
+ th, td {
+  border-color: #96D4D4;
+}
+
+</style>
+<script>
+ function confirmation()
+	{
+       if (confirm('Do you want this slot')) {
+		HTMLFormElement.submit();
+       } 
+	   else 
+	   {
+           return false;
+       }
+    }
+
+
+function choosen()
+{
+	if(document.getElementById('slot1')==document.getElementById('Slot'))
+	{
+		if(document.getElementById('slot1').value==document.getElementById('schedule'))
+		{
+			document.getElementById('slot1').innerHTML="TAKEN";
+		}
+	}
+
+}
+
+
+
+
+</script>
+</head>
+<body>
+
+ <div class="mainTable">
+            <h2><center>Schedule</center></h2>
+<center><table id="table" border="1">
+
+<tr>
+	<th>  Monday  </th> 
+	<th>  Tuesday  </th>
+	<th>  Wednesday  </th>
+ 	<th>  Thursday </th>
+ 	<th>  Friday  </th> 
+	<th>  Saturday  </th> 
+	<th>  Sunday  </th> 
+</tr> 
+<tr id="slot1">
+                    <td><a value=" Monday 12am-3am"> 12am -3am </a></td>
+                    <td><a value=" Tuesday 12am-3am"> 12am -3am</a></td>
+                    <td><a value=" Wednesday 12am-3am"> 12am -3am</a> </td>
+                    <td><a value=" Thursday 12am-3am"> 12am -3am</a>  </td>
+                    <td><a value=" Friday 12am-3am"> 12am -3am</a>  </td>
+					<td><a value=" Saturday 12am-3am">12am -3am</a> </td>
+                    <td><a value=" Sunday 12am-3am"> 12am -3am </a></td>
+                </tr>
+                
+                <tr id="slot2">
+                   
+                    <td><a value=" Monday 3am-6am"> 3am - 6am </a></td> 
+                    <td><a value=" Tuesday 3am-6am"> 3am - 6am </a></td>
+                    <td><a value=" Wednesday 3am-6am"> 3am - 6am</a> </td>
+                    <td><a value=" Thursday 3am-6am"> 3am - 6am</a> </td>
+					<td><a value=" Friday 3am-6am"> 3am - 6am </a></td>
+                    <td><a value=" Saturday 3am-6am"> 3am - 6am</a> </td>
+					<td><a value=" Sunday 3am-6am"> 3am - 6am</a> </td>
+                </tr>
+                
+                <tr id="slot3">
+                 <td><a value=" Monday 6am-9am">  6am - 9am </a></td>
+				 <td><a value=" Tuesday 6am-9am"> 6am - 9am </a></td>
+	             <td><a value=" Wednesday 6am-9am"> 6am - 9am </a></td>
+	             <td><a value=" Thursday 6am-9am"> 6am - 9am</a> </td>
+	             <td><a value=" Friday 6am-9am"> 6am - 9am </a></td>
+	             <td><a value=" Saturday 6am-9am"> 6am - 9am</a> </td>
+	             <td><a value=" Sunday 6am-9am"> 6am - 9am </a></td>
+
+                </tr>
+		<tr id="slot4">
+             <td><a value=" Monday 9am-12pm"> 9am-12pm </a></td>
+		     <td><a value=" Tuesday 9am-12pm"> 9am-12pm </a></td>
+	         <td><a value=" Wednesday 9am-12pm"> 9am-12pm</a> </td>
+		     <td><a value=" Thursday 9am-12pm"> 9am-12pm</a> </td>
+		     <td><a value=" Friday 9am-12pm"> 9am-12pm</a> </td>
+		     <td><a value=" Saturday 9am-12pm"> 9am-12pm</a> </td>
+		     <td><a value=" Sunday 9am-12pm"> 9am-12pm </a></td>
+
+                </tr>
+		<tr id="slot5">
+		     <td><a value=" Monday 12pm-3pm"> 12pm-3pm </a></td>
+		     <td><a value=" Tuesday 12pm-3pm"> 12pm-3pm</a> </td>
+ 		     <td><a value=" Wednesday 12pm-3pm"> 12pm-3pm</a> </td>
+ 		     <td><a value=" Thursday 12pm-3pm"> 12pm-3pm</a> </td>
+		     <td><a value=" Friday 12pm-3pm"> 12pm-3pm </a></td>
+ 		     <td><a value=" Saturday 12pm-3pm"> 12pm-3pm </a></td>
+ 		     <td><a value=" Sunday 12pm-3pm"> 12pm-3pm</a> </td>
+		</tr>
+		<tr id="slot6">
+		     <td><a value=" Monday 3pm-6pm"> 3pm-6pm </a></td>
+		     <td><a value=" Tuesday 3pm-6pm"> 3pm-6pm </a></td>
+	         <td><a value=" Wednesday 3pm-6pm"> 3pm-6pm </a></td>
+		     <td><a value=" Thursday 3pm-6pm"> 3pm-6pm </a></td>
+		     <td><a value=" Friday 3pm-6pm"> 3pm-6pm </a></td>
+	         <td><a value=" Saturday 3pm-6pm"> 3pm-6pm </a></td>
+		     <td><a value=" Sunday 3pm-6pm"> 3pm-6pm </a></td>
+		</tr>
+		<tr id="slot7">
+		     <td><a value=" Monday 6pm-9pm"> 6pm-9pm </a></td>
+		     <td><a value=" Tuesday 6pm-9pm"> 6pm-9pm </a></td>
+		     <td><a value=" Wednesday 6pm-9pm"> 6pm-9pm</a> </td>
+ 		     <td><a value=" Thursday 6pm-9pm"> 6pm-9pm </a></td>
+		     <td><a value=" Friday 6pm-9pm"> 6pm-9pm</a> </td>
+ 		     <td> <a value=" Saturday 6pm-9pm">6pm-9pm </a></td>
+		     <td><a value=" Sunday 6pm-9pm"> 6pm-9pm </a></td>
+		</tr>
+		<tr id="slot8">
+			 <td><a value=" Monday 9pm-12am"> 9pm-12pm </a></td>
+			 <td><a value=" Tuesday 9pm-12am"> 9pm-12pm </a></td>
+			 <td><a value=" Wednesday 9pm-12am"> 9pm-12pm</a> </td>
+			 <td><a value=" Thursday 9pm-12am"> 9pm-12pm</a> </td>
+			 <td><a value = "Friday 9pm-12am" > 9pm-12pm </a></td>
+			 <td><a value = "Saturday 9pm-12am" > 9pm-12pm </a></td>
+			 <td><a value = "Sunday 9pm-12am" >  9pm-12pm</a></td>
+</tr>
+</table></center>     
+
+<h3><center>Choose your Schedule</center> <h3> 
+<center><form action="verify.php" method="post" onsubmit= "confirmation()";>
+<table>
+
+
+<tr><td><label for="Schedule">Choose a Time Slot:</label>
+<select name="TimeSlot" id="TimeSlot">
+
+  <option value="12am-3am">Midnight-3am</option>
+
+  <option value="3am-6am">3-6am</option>
+
+  <option value="6am-9am">6am-9am</option>
+  
+  <option value="9am-12pm">9am-Noon</option>
+  
+  <option value="12pm-3pm">Noon-3pm</option>
+  
+  <option value="3pm-6pm">3-6pm</option>
+  
+  <option value="6pm-9pm">6-9pm</option>
+  
+  <option value="9pm-12am">9pm-Midnight</option>
+
+</select>
+
+<tr><td>
+<label for="Schedule">Choose a Day:</label>
+<select name="Schedule" id="Schedule">
+
+  <option value="Monday">Monday</option>
+
+  <option value="Tuesday">Tuesday</option>
+
+  <option value="Wednesday">Wednesday</option>
+  
+  <option value="Thursday">Thursday</option>
+  
+  <option value="Friday">Friday</option>
+  
+  <option value="Saturday">Saturday</option>
+  
+  <option value="Sunday">Sunday</option>
+
+</select></center>
+
+ 
+</td></tr>
+
+<tr colspan = "2"><td><input type="submit" value="SUBMIT"></td></tr>
+
+
+</body>
+</html>

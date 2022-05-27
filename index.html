@@ -1,0 +1,40 @@
+
+<html>
+<head>
+<style>
+body {background-color: white;}
+</style>
+<script>
+function validate()
+{
+
+		if(document.getElementById("Password").value == '')
+			{
+				alert("Password FIELD IS EMPTY");
+				return false;
+			}
+			
+			else
+			if(document.getElementById("Apartment").value == '')
+			{
+				alert("Schedule FIELD IS EMPTY");
+				return false;
+			}
+			
+				return true;
+}
+</script>
+</head>
+<body>
+<p> <h1>Welcome to the Laundry Schedule <h1> 
+<h4>Log in to choose/review your schedule<h4> </p>
+<form action="login.php" method="post" onsubmit="return validate()">
+<table>
+<tr><td>Username </td><td><input type="text" name="UserId" id="UserId"></td></tr>
+<tr><td>Password</td><td><input type="password" name="Password" id="Password"></td></tr>
+</table>
+<tr colspan = "2"><td><input type="submit" value="Log In"></td><td> 
+<a href="signUp.html"><input type="button" value="Register"></td><td></a> 
+</form>
+</body>
+</html>
